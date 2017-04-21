@@ -1,6 +1,9 @@
 # Javascript Development Docker Image
 A simple docker image to allow Javascript CI, made with :heart: by the NearIT team.
 
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/nearit/docker-yarn-sass-phantomjs.svg?branch=master)](https://travis-ci.org/nearit/docker-yarn-sass-phantomjs)
+
 What is this?
 ------
 A simple docker image based on ```node:7``` image
