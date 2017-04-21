@@ -5,7 +5,7 @@ services:
 
 script:
 - docker build -t nearit/docker-yarn-sass-phantomjs .
-- if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+- if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -e $DOCKER_EMAIL -u $DOCKER_USERNAME -p $DOCKER_PASSWORD;
   docker push nearit/docker-yarn-sass-phantomjs; fi
 
 notifications:
