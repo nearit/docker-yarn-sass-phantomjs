@@ -2,8 +2,8 @@
 A simple docker image to allow Javascript CI, made with :heart: by the NearIT team.
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
-[![Build Status](https://travis-ci.org/nearit/docker-yarn-sass-phantomjs.svg?branch=master)](https://travis-ci.org/nearit/docker-yarn-sass-phantomjs)
 [![Docker Hub](https://img.shields.io/badge/DockerHub-latest-brightgreen.svg)](https://hub.docker.com/r/nearit/docker-yarn-sass-phantomjs/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/nearit/docker-yarn-sass-phantomjs.svg)](https://hub.docker.com/r/nearit/docker-yarn-sass-phantomjs/)
 
 What is this?
 ------
