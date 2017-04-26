@@ -1,6 +1,6 @@
 FROM node:7
 
-# Install required dependencies (Alpine Linux packages)
+# Install required dependencies (Debian packages)
 RUN \
   apt-get install \
   tar \
@@ -27,7 +27,9 @@ RUN \
 
 # install (global) NPM packages/dependencies
 RUN \
-  npm install -g node-gyp
+  npm install -g \
+  node-gyp \
+  node-sass
 
 # install phantomjs
 ENV PHANTOMJS_BIN "/usr/local/bin/phantomjs"
@@ -36,9 +38,10 @@ RUN \
 
 # cleanup
 RUN \
-  rm -rf /tmp
+  rm -rf /tmp \
+  && npm cache clean -f
 
-# Create an empty /tmp folder (required by the kind of Karma)
+# Create an empty writable /tmp folder (required by the kind of Karma)
 RUN \
   mkdir /tmp \
   && chmod 777 /tmp
